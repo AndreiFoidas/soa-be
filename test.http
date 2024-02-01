@@ -1,0 +1,45 @@
+
+### GET One Store Request
+GET http://127.0.0.1:3333/store003
+
+
+### GET All Stores Request
+GET http://127.0.0.1:3333
+
+
+### GET All Orders Request
+GET http://127.0.0.1:2222
+
+
+
+### GET All Stores Request
+GET http://127.0.0.1:8765/api/store
+
+### GET All Orders Request
+GET http://127.0.0.1:8765/api/order/
+
+
+### GET Store Inventory Request
+GET http://127.0.0.1:8765/api/store/store001/inventory
+
+### POST Save Order Request
+POST http://127.0.0.1:8765/api/order/
+Content-Type: application/json
+
+{
+  "name": "Test1",
+  "deliveryAddress": "Addr1",
+  "phoneNumber": "0123-456-7890",
+  "price": 800.0,
+  "emailAddress": "test@yahoo.com",
+  "items": [
+    {
+      "name": "Sneaker 5",
+      "price": 400
+    },
+    {
+      "name": "Sneaker 8",
+      "price": 400
+    }
+  ]
+}
